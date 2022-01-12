@@ -1,0 +1,54 @@
+.loading{
+    background-image: linear-gradient(0deg, rgba(249,249,251,1) 50%, rgba(209,29,32,1) 50%);;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading .pokeball{
+    width: 10rem;
+    height: 10rem;
+    background-image: url('./images/pokeball.png');
+    background-size: 100% 100%;
+    // transition: all ease 10s;
+    // &:hover{
+    //     transform: rotate(360deg);
+    // }
+}
+
+.win-window, .loose-window{
+    position: fixed;
+    background-color: rgba(249, 249, 251, 0.501);
+    width: 85%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.win-window{
+    background-color: rgba(249, 249, 251, 0.501);
+}
+.loose-window{
+    background-color: rgba(209, 29, 32, 0.501);
+}
+.win-window p, .loose-window p{
+    font-size: 5rem;
+    font-family: $win;
+    margin-bottom: 10rem;
+    text-transform: uppercase;
+}
+.loose-window p{
+    color: black;
+}
+
+@media (max-width: 500px) {
+    .win-window,.loose-window{
+        top:10.1rem;
+        width: 100%;
+    }
+    .win-window p,.loose-window p{
+        font-size: 3rem;
+    }
+}
