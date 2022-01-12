@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const CountDown = (props) => {
     const [time, setTime] = useState({ms:0, s:40, m:0, h:0}),
         [interv, setInterv] = useState(),
-        [timeShow, setTimeShow] = useState("00:00:00"),
+        [timeShow, setTimeShow] = useState("00:00:30"),
         [status, setStatus] = useState(false),
         dif = props.dif,
         start  = props.start,
